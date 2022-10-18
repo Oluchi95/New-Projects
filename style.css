@@ -68,7 +68,7 @@ body{
 
 
 .third{
-    background-image: url('Images/bigstock-Portrait-of-beautiful-african-247358977.webp');
+    background-image: url("Images/bigstock-Portrait-of-beautiful-african-247358977.webp");
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -93,7 +93,7 @@ body{
 
 
 .fourth{
-    background-image: url('Images/young.webp');
+    background-image: url("Images/young.webp");
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -147,7 +147,7 @@ span{
 
 
 .sixth{
-    background-image: url('Images/creative.jpg');
+    background-image: url("Images/creative.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
