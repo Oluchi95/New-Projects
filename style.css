@@ -93,7 +93,7 @@ body{
 
 
 .fourth{
-    background-image: url('Images/beautifu.jpg');
+    background-image: url('./Images/beautifu.jpg');
     background-position: center;
     background-size: cover;
     height: 300px;
