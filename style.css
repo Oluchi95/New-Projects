@@ -68,7 +68,7 @@ body{
 
 
 .third{
-    background-image: url('Images/beautifu.jpg');
+    background-image: url('./images/beautifu.jpg');
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -147,7 +147,7 @@ span{
 
 
 .sixth{
-    background-image: url('Images/creative.jpg');
+    background-image: url('./images/makeover.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 10px;
