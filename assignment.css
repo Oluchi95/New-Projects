@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav{
+    background-color: #0077AA;
+}
+.main-nav-link{
+    color: #ffffff !important;
+    font-size: 15px !important;
+}
+.main-nav-link:hover{
+    color: #000 !important;
+}
+.fa-envelope{
+    margin-right: 5px;
+}
+.fa-phone{
+    margin-right: 5px;
+}
+.sub-nav{
+    padding: 5px 0;
+}
+.sub-nav-link{
+    color: #ffffff !important;
+    margin-left: 10px;
+    border: 1px solid rgb(102,173,204);
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    padding: 5px 0 !important;
+    font-size: 12px !important;
+}
+.sub-nav-link:hover{
+    color: #000 !important;
+    border: 1px solid #000;
+}
+
+
+
+header{
+    height: 100px;
+    width: 100%;
+    /*top: 50px;
+    position: fixed !important;*/
+    align-items: center;
+}
+.navbar-brand{
+    margin-left: 100px;
+}
+.empowa{
+    width: 35px;
+    height: 28px;
+}
+.logo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+.navbar-nav{
+    margin-left: 150px;
+}
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+}
+.dropdown-toggle{
+    margin-left: 10px;
+    color: #000 !important;
+}
+.dropdown-item{
+    font-family: 'Poppins', sans-serif;
+}
+.form-select{
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.Empowa-photo{
+    background-image: url('./images/A_young_girl_pictured_with_her_friends_Nigeria_38758526845.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.mask{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px !important;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+.empowa-breadcrumb li{
+    display: inline;
+    margin-left: 5px;
+}
+.empowa-breadcrumb li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.empowa-breadcrumb li a:hover{
+    color: #0000ff !important;
+}
+.cat-date{
+    color: #999;
+}
+.cat-lasting{
+    color: #999;
+    margin-bottom: 30px;
+}
+.blog-news{
+    color: #000;
+    text-align: justify;
+    font-family: 'Poppins' sans-serif;
+}
+.blog-img{
+    background-image: url('./images/pexels-photo-1644888.jpeg');
+    background-position: top;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.categories{
+    margin-bottom: 100px;
+}
+
+.footer{
+    background-color: #000 !important;
+    color: #ffffff !important;
+}
