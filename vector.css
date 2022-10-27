@@ -456,13 +456,13 @@ header{
 }
 @media only screen and (min-width:320px) and (max-width:480px){
     .cards{
-        background-color: #F7DF1E;
         display: block;
         padding: 15px;
         text-align: center;
     }
     .card{
-        margin: 0;
+        margin-bottom: 30px;
+        margin-left: 0 !important;
         height: 400px;
         width: 98%;
     }
@@ -475,7 +475,8 @@ header{
         width: 90%;
         border-radius: 15px;
         position: relative;
-        margin: 20px 15px 30px 19px;
+        margin: 0 15px 30px 19px;
+        top: 20px;
     }
     .dog-illustration{
         height: 200px;
@@ -619,6 +620,6 @@ header{
     .footer button{
         margin-left: 5px;
         margin-right: 0;
-        width: 100px;
+        width: 110px;
     }
 }
