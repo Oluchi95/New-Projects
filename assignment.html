@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/510955d83d.js" crossorigin="anonymous"></script>
         <link  href="./assignment.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
@@ -13,185 +13,277 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
         <title>Empowa: Empowering Women to maximize their potentials</title>
     </head>
-    <body>
-        <nav class="main-nav py-2 border-bottom">
-            <div class="container d-flex flex-wrap">
-                <ul class="nav me-auto">
-                    <li class="nav-item"><a href="#" class="nav-link main-nav-link px-2"><i class="fa-solid fa-envelope"></i> @info.empowa.org</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link main-nav-link px-2"><i class="fa-solid fa-phone"></i> +234 1122 334 455</a></li>
-                </ul>
-                <form class="d-flex col-12 col-lg-auto mb-3 mb-lg-0">
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm">
-                        <option value="1">English</option>
-                        <option value="2">Igbo</option>
-                        <option value="3">Yoruba</option>
-                        <option value="4">Hausa</option>
-                        <option value="5">French</option>
-                        <option value="6">Others</option>
-                    </select>
-                </form>
-                <ul class="nav sub-nav">
-                    <li class="nav-item"><a href="#" class="nav-link sub-nav-link px-2"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link sub-nav-link px-2"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link sub-nav-link px-2"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link sub-nav-link px-2"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <header class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="assignment.html">
-                    <img src="data:image/png;base64,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" alt="Logo" class="empowa d-inline-block align-text-top">
-                    <span class="logo">Empowa</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Purpose & Vision</a></li>
-                                <li><a class="dropdown-item" href="#">Impact Numbers</a></li>
-                                <li><a class="dropdown-item" href="#">Annual Reports</a></li>
-                                <li><a class="dropdown-item" href="#">Empowa History</a></li>
-                                <li><a class="dropdown-item" href="#">Empowa Leadership</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Inspiring Women</a></li>
-                                <li><a class="dropdown-item" href="#">Growing Strong Leaders</a></li>
-                                <li><a class="dropdown-item" href="#">Developing Skilled People</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Development Goals</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Transforming Education</a></li>
-                                <li><a class="dropdown-item" href="#">Economic, Social and Political Inclusion</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Updates</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Resources</a></li>
-                                <li><a class="dropdown-item" href="#">Empowa Blog</a></li>
-                                <li><a class="dropdown-item" href="#">Press Coverage</a></li>
-                                <li><a class="dropdown-item" href="#">View Empowa's Videos</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Patner with Us</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Our Partners</a></li>
-                                <li><a class="dropdown-item" href="#">Corporate</a></li>
-                                <li><a class="dropdown-item" href="#">Government</a></li>
-                                <li><a class="dropdown-item" href="#">Awards and Recognition</a></li>
-                                <li><a class="dropdown-item" href="#">International Organizations</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Contact us</a></li>
-                                <li><a class="dropdown-item" href="#">Opportunities at Empowa</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+    <body  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+        <div class="top-nav" id="home">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <p> <i class="fa-solid fa-envelope"></i> @info.empowa.org</p>
+                            <p> <i class="fa-solid fa-phone"></i> +234 1122 334 455</p>
+                        </div>
+                        <div class="col-auto social-icons">
+                            <a href="https://web.facebook.com/womensempowermentgroup/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/empower_women"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/gentlewomensayings/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/womens-empowerment"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
-        
-        <div class="container">
-            <div class="row Empowa-photo">
-                <div class="mask text-light">
-                    <div class="col-xs-6">
-                        <h1 class="">LASTING COMMUNITIES</h1>
-                    </div>
-                    <div class="col-xs-6">
-                        <ul class="empowa-breadcrumb">
-                            <li><a href=""><span>Home</span></a></li>
-                            <li class="separator">/</li>
-                            <li><a href=""><span>Key Challenges</span></a></li>
-                            <li class="separator">/</li>
-                            <li><a href=""><span>Lasting Communities</span></a></li>
-                            <li class="separator">/</li>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+                <div class="container">
+                    <a class="navbar-brand" href="assignment.html">Empowa<span class="dot">.</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#what we do">What We Do</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#updates">Updates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#partner with us">Partner with Us</a>
+                            </li>
                         </ul>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">Contact</a>
                     </div>
+                </div>      
+            </nav>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
-            </div>
-        </div>
-
-        <div class="container categories">
-            <div class="row cat-date">
-                <span>- October 21st, 2022.</span>
-            </div>
-            <div class="row cat-blog">
-                <h2>Empowa: Empowering Women to maximize their potentials</h2>
-            </div>
-            <div class="row cat-lasting">
-                <span>- Lasting Communities</span>
-            </div>
-            <div class="row">
-                <div class="col-6 blog-news">
-                    <p>Empowa is a Nigerian non-governmental-organization funded by and in partnership with well-meaning Nierians and International bodies. It seeks to increase the number of women who participate in and lead in business and political organizations in the 36 states in Nigeria. The project in Thailand strives to increase women's leadership, participation, and access to business opportunities within the private sector to advance sustainable and inclusive growth.This is accomplished through awareness-raising activities and engaging government agencies and private sector companies in policy discussions and dialogues to advance women's economic empowerment.</p>
-                </div>
-                <div class="col-6">
-                    <div class="blog-img"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <footer class="py-5">
-                <div class="row">
-                    <div class="row">
-                        <div class="col-6 col-md-4 mb-3">
-                          <h5>GET TO KNOW US</h5>
-                          <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Values</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Impact</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Resources</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Read our Blog</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Annual Reports</a></li>
-                          </ul>
-                        </div>
-                  
-                        <div class="col-6 col-md-2 mb-3">
-                          <h5>LEARN MORE</h5>
-                          <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers at Empowa</a></li>
-                          </ul>
-                        </div>
-                  
-                        <div class="col-md-5 offset-md-1 mb-3">
-                          <form>
-                            <h5>SIGN UP FOR EMPOWA UPDATES</h5>
-                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                              <label for="newsletter1" class="visually-hidden">Email address</label>
-                              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                              <button class="btn btn-primary" type="button">Subscribe</button>
-                            </div>
-                          </form>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/A_young_girl_pictured_with_her_friends_Nigeria_38758526845.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p><b>AGE IS NOT A BARRIER, GIRLS CAN BEMORE!!!</b></p>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <img src="images/cowomen-ZKHksse8tUU-unsplash.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p><b>GENDER OR NOT, WOMEN TOO CAN BE MORE!!!<b</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/joeyy-lee-TYA5rE2Meys-unsplash.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p><b>WE BELIEVE THAT EVERYONE HAS THE RIGHT TO BUILD A BETTER LIFE<b</p>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                        <img src="images/joel-muniz-HvZDCuRnSaY-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><b>WE VOW TO CONTINUE WORKING WITH PARTNERS TO TRANSFORM EDUCATION AND DRIVE ECONOMIC AND SOCIAL INCLUSION</b></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>© 2022 Company, Inc. All rights reserved.</p>
-                    <ul class="list-unstyled d-flex">
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-                    </ul>
-                </div>
-            </footer>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="visually-visible" aria-hidden="true">Prev</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="visually-visible" aria-hidden="true">Next</span>
+                </button>
+            </div>
         </div>
         
+        <section id="what we do" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro">
+                            <h6>OUR SERVICE</h6>
+                            <h1>WHAT WE DO?</h1>
+                            <p class="mx-auto">Empowa is the leading non-profit provider of education programming in Nigeria designed to inspire students, build skilled teachers and grow strong principals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <img src="images/skills.webp" alt="">
+                            <h5>DEVELOPING SKILLED PEOPLE</h5>
+                            <p>Empowa believes everyone has the right to improve themselves, their families and their community. And Kenan's experts are here to support them to do just that, developing skilled people.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <img src="images/leader.jpg" alt="">
+                            <h5>GROWING STRONG LEADERS</h5>
+                            <p>Empowa's comprehensive leadership programs are building the next generation of strong leaders to help tackle development challenges at the local, national, and regional level.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service">
+                            <img src="images/study.jpg" alt="">
+                            <h5>INSPIRING STUDENTS</h5>
+                            <p>Our experts work across Nigeria to provide poor students with exciting, hands-on learning activities that inspire them to pursue a 21st century education and dream big about their future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="updates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro">
+                            <h6>UPDATES</h6>
+                            <h1>EMPOWA NEWS</h1>
+                            <p class="mx-auto">We work in Nigeria to deliver impact for lasting communities. Our bloggers have direct contact with those on the ground who are empowering people to achieve their dreams. Read on and remember to stay updated.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-8">
+                        <div class="updates-news">
+                            <div class="image">
+                                <img src="images/1000_F_319245189_AJSNcOAn5mFp3XzhEHmaL4RaZq4rhQ4h.jpg" alt="">
+                            </div>
+                            <h5>Aspiring the new generational workers of tomorrow</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8">
+                        <div class="updates-news">
+                            <div class="image">
+                                <img src="images/iStock-1089764200-1024x683.webp" alt="">
+                            </div>
+                            <h5>Help farmers before it is too late</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8">
+                        <div class="updates-news">
+                            <div class="image">
+                                <img src="images/Depositphotos_162768234_S.webp" alt="">
+                            </div>
+                            <h5>Women leading the supply chain</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="partner with us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro">
+                            <h6>Partner with Us</h6>
+                            <h1>WHY PARTNER WITH EMPOWA</h1>
+                            <p class="mx-auto">Empowa is committed to the social and economic development of Nigeria and the world at large. To achieve that mission, we carry out a wide variety of programming in support of people, communities, organizations, and countries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <article class="partner">
+                            <img src="images/young-african-american-female-gesturing-with-her-fist-female-empowerment-concept_181624-32888.webp" alt="">
+                            <div class="content">
+                                <h5>WHY COMPANIES PARTNER WITH EMPOWA</h5>
+                                <p>In tackling these challenges, empowa has developed a model of social and economic development that is also ideally suited to support corporate objectives, as it’s a proven, results-driven model that rests upon our exceptional capacity building activities, coupled with a deep understanding of how to engage and motivate our beneficiaries to improve their lives.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="partner">
+                            <img src="images/pexels-rodnae-productions-7951986.jpg" alt="">
+                            <div class="content">
+                                <h5>INTERNATIONAL ORGANIZATIONS</h5>
+                                <p>Enpowa provides world-class consulting, project management, training, and research services to our multilateral and bilateral partners. As a locally-based organization, we bring a unique and powerful combination of international expertise and culturally-specific knowledge to our programs and partnerships throughout Nigeria</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="partner">
+                            <img src="images/businesswomen-fist-bump_53876-15167.webp" alt="">
+                            <div class="content">
+                                <h5>AWARDS AND RECOGNITIONS</h5>
+                                <p>Empowa has a long tradition of partnering with companies that value making meaningful contributions to the communities in which they operate. As such, government bodies and institutions regularly recognize the CSR work of Kenan and its partners for delivering impactful social and economic development programming in Nigeria</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="footer-top text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="col-auto social-icons">
+                                <a href="https://web.facebook.com/womensempowermentgroup/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/empower_women"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/gentlewomensayings/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/womens-empowerment"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="col-auto conditions-section">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms and Condition</a>
+                                <a href="#">Anti-Trafficking Compliance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">Copyright@2022. All rights Reserved</p> Powered By
+            </div>
+        </footer>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid">
+                            <div class="row gy-4">
+                                <div class="col-lg-4 col-sm-12 bg-cover"></div>
+                                <div class="col-lg-8">
+                                    <form class="p-lg-5 col-12 row g-3">
+                                        <div>
+                                            <h1>Get in touch</h1>
+                                            <p>Feel free to contact us and be sure to get a swift response from us</p>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="userName" class="form-label">First name</label>
+                                            <input type="text" class="form-control" placeholder="First name" id="userName" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="userName" class="form-label">Last name</label>
+                                            <input type="text" class="form-control" placeholder="Last name" id="userName" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="userName" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" placeholder="empowa@info.com" id="userName" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                                            <textarea name="" placeholder="I would like to partner with you..." class="form-control" id="" rows="4"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-brand">Send Message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
